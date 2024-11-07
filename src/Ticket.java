@@ -2,7 +2,7 @@ import java.util.Objects;
 
 public class Ticket implements Identifiable {
     @NullableWarning(message = "Variable [id] is null in [Ticket]")
-    private Integer id; // Используем Integer для проверки null
+    private Integer id;
 
     private String concertHall;
     private int eventCode;
@@ -13,7 +13,7 @@ public class Ticket implements Identifiable {
     private double price;
 
     public Ticket(String id, String concertHall, int eventCode, long time, boolean isPromo, char stadiumSector, double maxAllowedBackpackWeight, double price) {
-        setId(Integer.parseInt(id)); // Преобразуем строковый ID в Integer
+        setId(Integer.parseInt(id));
         this.concertHall = concertHall;
         this.eventCode = eventCode;
         this.time = time;

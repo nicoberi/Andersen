@@ -4,7 +4,7 @@ public class User {
     }
 
     public Ticket getTicket() {
-        // Логика получения билета
+
         System.out.println("User is getting a ticket.");
         return new Ticket();
     }
